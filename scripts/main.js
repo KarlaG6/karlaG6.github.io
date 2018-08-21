@@ -21,7 +21,7 @@ if (!localStorage.getItem('nombre')) {
 }
 else {
     var nombreAlmacenado = localStorage.getItem('nombre');
-    miTitulo.textContent = 'Eres la mejor:' + nombreAlmacenado;
+    miTitulo.textContent = 'Eres la gaver: ' + nombreAlmacenado;
 }
 miBoton.onclick = function() {
     estableceNombreUsuario();
