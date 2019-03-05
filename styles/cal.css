@@ -1,3 +1,7 @@
+body {
+    background: #96DFD0;
+}
+
 div.flex-container {
     width: 130px;
     /* border: solid; */
@@ -13,4 +17,7 @@ div.flex-container {
     background: gray;
     border-radius: 5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#delete {
+    background: red
 }
