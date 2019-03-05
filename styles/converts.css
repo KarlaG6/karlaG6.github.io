@@ -1,3 +1,35 @@
 body {
-    background: pink
+    background: #96DFD0;
+    display: flex;
+}
+div.flex-container {
+    width: 55%;
+    height: 294px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    background: white;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 5%;
+    background: beige;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+span {
+    margin: 15px 0;
+    justify-content: center;
+}
+select.w3-select {
+    margin: 15px 5px;
+    height: 11%;
+    border-radius: 2%;
+    
+}
+input.text-field {
+    margin: 5%;
+    height: 10%;
+    border-radius: 2%;
+    
 }
