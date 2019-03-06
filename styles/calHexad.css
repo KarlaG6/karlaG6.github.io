@@ -1,0 +1,76 @@
+body {
+    background: #96DFD0;
+}
+
+.grid-container {
+    width: 82%;
+    height: 368px;
+    display: grid;
+    background-image:
+    linear-gradient(rgb(51, 255, 119), rgb(0, 145, 202));
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 145, 202, 0.6), 0 6px 20px 0 rgba(0, 145, 202, 0.19);
+    grid-template-areas:
+        'header header header header'
+        'main1 main2 main3 main4'
+        'main5 main6 main7 main8'
+        'main9 main10 main11 main12'
+        'main13 main14 main15 main16'
+        'main17 main18 main19 main20'
+        'main21 main22 main23 main24'
+        'main25 main26 main27 main28';
+    margin: auto;
+}
+button {
+    border: none;
+    background: transparent
+}
+button>#delete {
+    opacity: 0.3 !important
+}
+input {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    grid-area: header;
+}
+button {
+    text-align: center;
+}
+.item1{ grid-area: main1}
+.item2{ grid-area: main2}
+.item3{ grid-area: main3}
+.item4{ grid-area: main4}
+
+.item5{ grid-area: main5}
+.item6{ grid-area: main6}
+.item7{ grid-area: main7}
+.item8{ grid-area: main8}
+
+.item9{ grid-area: main9}
+.item10{ grid-area: main10}
+.item11{ grid-area: main11}
+.item12{ grid-area: main12}
+
+.item13{ grid-area: main13}
+.item14{ grid-area: main14}
+.item15{ grid-area: main15}
+.item16{ grid-area: main16}
+
+.item17{ grid-area: main17}
+.item18{ grid-area: main18}
+.item19{ grid-area: main19}
+.item20{ grid-area: main20}
+
+.item21{ grid-area: main21}
+.item22{ grid-area: main22}
+.item23{ grid-area: main23}
+.item24{ grid-area: main24}
+
+.item25{ grid-area: main25}
+.item26{ grid-area: main26}
+.item27{ grid-area: main27}
+.item28{ grid-area: main28}
+
+#ops {
+    
+}

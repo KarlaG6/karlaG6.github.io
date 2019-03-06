@@ -5,55 +5,54 @@
     <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
     <title>Hexadecimal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles/cal.css" rel="stylesheet" type="text/css">
+    <link href="styles/calHexad.css" rel="stylesheet" type="text/css">
     
 </head>
 <body>
-    <div class="flex-container">
-    <input class="text-field"></input>
+    <div class="grid-container">
+    <input class="text-field item" readonly></input>
 
     <!--fila 1--> 
-    <button id="delete">Del</button>     
-    <button><-</button>     
-    <button>MODE</button>     
-    <button>-></button>     
-    <button id="delete">AC</button>     
+    <button class="item1" id="delete">Del</button>     
+    <button class="item2"><-</button>     
+    <button class="item3">-></button>     
+    <button class="item4" id="delete">AC</button>     
                 
     <!-- fila 2-->
-    <button>D</button>     
-    <button>E</button>     
-    <button>F</button>     
-    <button>+</button>     
+    <button class="item5">D</button>     
+    <button class="item6">E</button>     
+    <button class="item7">F</button>     
+    <button class="item8" id="ops">Ans</button>     
                 
     <!--fila 3--> 
-    <button>A</button>     
-    <button>B</button>     
-    <button>C</button>     
-    <button>-</button>     
+    <button class="item9">A</button>     
+    <button class="item10">B</button>     
+    <button class="item11">C</button>     
+    <button class="item12" id="ops">+</button>     
                 
     <!--fila 4--> 
-    <button>7</button>     
-    <button>8</button>     
-    <button>9</button>     
-    <button>x</button>     
+    <button class="item13">7</button>     
+    <button class="item14">8</button>     
+    <button class="item15">9</button>     
+    <button class="item16" id="ops">-</button>     
                 
     <!--fila 5--> 
-    <button>4</button>     
-    <button>5</button>     
-    <button>6</button>     
-    <button>/</button>               
+    <button class="item17">4</button>     
+    <button class="item18">5</button>     
+    <button class="item19">6</button>     
+    <button class="item20" id="ops">x</button>               
                 
     <!--fila 6--> 
-    <button>1</button>     
-    <button>2</button>     
-    <button>3</button>      
-    <button>=</button>
+    <button class="item21">1</button>     
+    <button class="item22">2</button>     
+    <button class="item23">3</button>      
+    <button class="item24" id="ops">/</button>
 
     <!--fila 7-->
-    <button>0</button>     
-    <button>.</button>     
-    <button>( )</button>      
-    <button>Ans</button>
+    <button class="item25" id="ops">0</button>     
+    <button class="item26" id="ops">.</button>     
+    <button class="item27" id="ops">( )</button>      
+    <button class="item28" id="ops">=</button>
     </div>
     <script src="hexad.js"></script>
 </body>
