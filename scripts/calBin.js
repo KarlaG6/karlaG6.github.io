@@ -4,7 +4,7 @@ function Init (){
     var alante = document.getElementsByClassName("item2");
     var Ans = document.getElementsByClassName("item3");
     var brackets = document.getElementsByClassName("item4");
-    var Delete = document.getElementsByClassName("item5");
+    var Delete = document.getElementsById("delete1");
     var reset = document.getElementsByClassName("item6");
     var suma = document.getElementsByClassName("item7");
     var mult = document.getElementsByClassName("item8");
@@ -15,7 +15,8 @@ function Init (){
     var point = document.getElementsByClassName("item13");
     var result = document.getElementsByClassName("item14");
 
-    one.onclick = function (event){alert("ghfjdsk")}
+    zero.onclick = function (event){alert("ghfjdsk")};
+    Delete.onclick = function(event){alert("hii")};
 }
 
 
