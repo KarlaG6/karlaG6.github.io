@@ -15,8 +15,9 @@ function Init (){
     var point = document.getElementsByClassName("item13");
     var result = document.getElementsByClassName("item14");
 
-    zero.onclick = function (event){alert("ghfjdsk")};
-    Delete.onclick = function(event){alert("hii")};
+    zero.onclick =  zero();
+    function zero(){alert("holi")};
+    Delete.addEventListener("click", zero());
 }
 
 
