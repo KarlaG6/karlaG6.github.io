@@ -20,6 +20,7 @@ body {
         'main21 main22 main23 main24'
         'main25 main26 main27 main28';
     margin: auto;
+    overflow: hidden;
 }
 button {
     border: none;

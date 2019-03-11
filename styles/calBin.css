@@ -18,13 +18,11 @@ body {
         'main9 main10 main11 main12'
         'main13 main13 main14 main14';
     margin: auto;
+    overflow: hidden;
 }
 button {
     border: none;
     background: transparent
-}
-button>#delete {
-    opacity: 0.3 !important
 }
 input{
     opacity: 0.5;
@@ -34,28 +32,29 @@ input{
     padding: 0 5% 5% 5%;
     overflow: hidden; 
 }
-input.resultShow{
+#resultShow{
     grid-area: header2 !important;
-    text-align: right
+    text-align: right;
+    border: none;
 }
 button {
     text-align: center;
 }
-.item1{ grid-area: main1}
-.item2{ grid-area: main2}
-.item3{ grid-area: main3}
-.item4{ grid-area: main4}
+#item1{ grid-area: main1}
+#item2{ grid-area: main2}
+#item3{ grid-area: main3}
+#item4{ grid-area: main4}
 
-.item5{ grid-area: main5}
-.item6{ grid-area: main6}
-.item7{ grid-area: main7}
-.item8{ grid-area: main8}
+#item5{ grid-area: main5}
+#item6{ grid-area: main6}
+#item7{ grid-area: main7}
+#item8{ grid-area: main8}
 
-.item9{ grid-area: main9}
-.item10{ grid-area: main10}
-.item11{ grid-area: main11}
-.item12{ grid-area: main12}
+#item9{ grid-area: main9}
+#item10{ grid-area: main10}
+#item11{ grid-area: main11}
+#item12{ grid-area: main12}
 
-.item13{ grid-area: main13}
-.item14{ grid-area: main14}
+#item13{ grid-area: main13}
+#item14{ grid-area: main14}
 

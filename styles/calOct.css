@@ -18,6 +18,7 @@ body {
         'main13 main14 main15 main16'
         'main17 main18 main19 main20';
     margin: auto;
+    overflow: hidden;
 }
 button {
     border: none;
