@@ -12,40 +12,55 @@ var rest = document.getElementById("item11");
 var divid = document.getElementById("item12");
 var point = document.getElementById("item13");
 var result = document.getElementById("item14");
-var ac = document.getElementById("item6");
 var screen = document.getElementById("screen");
-var opA= []; var opB = []; var num = 0;
+var opA= []; var opB = []; var num = 0; var type = 9;
 
 zero.addEventListener('click',function (){
     opA.push("0");
-    screen.value= opA.join("")
+    resultShow.value= opA.join("");
+    num= Number(opA.join("").toString());
 })
 one.addEventListener('click',function (){
     opA.push("1");
-    screen.value= opA.join("")
-})
-sum.addEventListener('click',function (){
-    screen.value+='+';
+    resultShow.value= opA.join("");
     num= Number(opA.join("").toString());
 })
+sum.addEventListener('click',function (){
+    screen.value=num+' + '; 
+    type = 0;
+})
 rest.addEventListener('click',function (){
-    screen.value+='-'
+    screen.value=num+' - ';
+    type= 1;
 })
 mult.addEventListener('click',function (){
-    screen.value+='x'
+    screen.value=num+' x '
+    type= 2;
 })
 divid.addEventListener('click',function (){
-    screen.value+='/'
+    screen.value=num+' / ';
+    type= 3;
 })
 point.addEventListener('click',function (){
-    screen.value+='.'
+    screen.value+='.';
 })
 brackets.addEventListener('click',function (){
-    screen.value+='()'
+    //screen.value+='()'
 })
-ac.addEventListener('click',function (){
-    screen.value+=''
+Delete.addEventListener('click',function (){
+    screen.value=''
 })
+/*function operation(type) {
+    swictch (type){
+        case 0:
+
+            break;
+        case 1:
+
+        break;
+
+    }
+}*/
 
 
 
