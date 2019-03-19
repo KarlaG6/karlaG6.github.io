@@ -13,8 +13,12 @@ var divid = document.getElementById("item12");
 var point = document.getElementById("item13");
 var result = document.getElementById("item14");
 var screen = document.getElementById("screen");
+<<<<<<< HEAD
 var opA= []; var opB = []; var num = 0; var type = 9;
 var opType =0; var num2=0; var resultOp =0; var resultFin=0;
+=======
+var opA= []; var opB = []; var num = 0; var type = 9;var opType =0; var num2=0;
+>>>>>>> 54f98b651edf8dda3efd5b79fdb86172ebd682b9
 
 zero.addEventListener('click',zerofnc)
 one.addEventListener('click',onefnc)
@@ -24,6 +28,7 @@ mult.addEventListener('click',mult)
 divid.addEventListener('click',divide)
 point.addEventListener('click',function (){
     screen.value+='.';
+<<<<<<< HEAD
 })
 brackets.addEventListener('click',function (){
     //screen.value+='()'
@@ -38,6 +43,17 @@ result.addEventListener('click',function(){
     resultShow.value=resultFin;
 })
 function onefnc(){  
+=======
+})
+brackets.addEventListener('click',function (){
+    //screen.value+='()'
+})
+reset.addEventListener('click',function (){
+    screen.value='';
+    resultShow.value="";
+})
+function onefnc(){
+>>>>>>> 54f98b651edf8dda3efd5b79fdb86172ebd682b9
     if( opType==0 ){
         opA.push("1");
         resultShow.value= opA.join("");
@@ -64,8 +80,12 @@ function zerofnc(){
 function sumar(){
     screen.value=num+' + '; 
     type = 0;
+<<<<<<< HEAD
     opType=1;
     
+=======
+    opType=1
+>>>>>>> 54f98b651edf8dda3efd5b79fdb86172ebd682b9
 }
 function restar(){
     screen.value=num+' - ';
@@ -82,6 +102,7 @@ function divide(){
     type= 3;
     opType=1
 }
+<<<<<<< HEAD
 function operations(){
     switch(type){
         case 0:
@@ -104,6 +125,27 @@ function operations(){
 }
     
 
+=======
+    switch(type){
+        case 0:
+        alert("suma");
+        break;
+
+        case 1:
+        alert("resta");
+        break;
+
+        case 2:
+        alert("mult");
+        break;
+
+        case 3:
+        alert("divid");
+        break;
+    }
+
+>>>>>>> 54f98b651edf8dda3efd5b79fdb86172ebd682b9
 
 
 
+ 
