@@ -14,8 +14,12 @@ var point = document.getElementById("item13");
 var result = document.getElementById("item14");
 var screen = document.getElementById("screen");
 <<<<<<< HEAD
+<<<<<<< HEAD
 var opA= []; var opB = []; var num = 0; var type = 9;
 var opType =0; var num2=0; var resultOp =0; var resultFin=0;
+=======
+var opA= []; var opB = []; var num = 0; var type = 9;var opType =0; var num2=0;
+>>>>>>> 54f98b651edf8dda3efd5b79fdb86172ebd682b9
 =======
 var opA= []; var opB = []; var num = 0; var type = 9;var opType =0; var num2=0;
 >>>>>>> 54f98b651edf8dda3efd5b79fdb86172ebd682b9
@@ -28,6 +32,7 @@ mult.addEventListener('click',mult)
 divid.addEventListener('click',divide)
 point.addEventListener('click',function (){
     screen.value+='.';
+<<<<<<< HEAD
 <<<<<<< HEAD
 })
 brackets.addEventListener('click',function (){
@@ -43,6 +48,17 @@ result.addEventListener('click',function(){
     resultShow.value=resultFin;
 })
 function onefnc(){  
+=======
+})
+brackets.addEventListener('click',function (){
+    //screen.value+='()'
+})
+reset.addEventListener('click',function (){
+    screen.value='';
+    resultShow.value="";
+})
+function onefnc(){
+>>>>>>> 54f98b651edf8dda3efd5b79fdb86172ebd682b9
 =======
 })
 brackets.addEventListener('click',function (){
@@ -81,8 +97,12 @@ function sumar(){
     screen.value=num+' + '; 
     type = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
     opType=1;
     
+=======
+    opType=1
+>>>>>>> 54f98b651edf8dda3efd5b79fdb86172ebd682b9
 =======
     opType=1
 >>>>>>> 54f98b651edf8dda3efd5b79fdb86172ebd682b9
@@ -102,6 +122,7 @@ function divide(){
     type= 3;
     opType=1
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 function operations(){
     switch(type){
@@ -131,6 +152,13 @@ function operations(){
         alert("suma");
         break;
 
+=======
+    switch(type){
+        case 0:
+        alert("suma");
+        break;
+
+>>>>>>> 54f98b651edf8dda3efd5b79fdb86172ebd682b9
         case 1:
         alert("resta");
         break;
@@ -144,6 +172,9 @@ function operations(){
         break;
     }
 
+<<<<<<< HEAD
+>>>>>>> 54f98b651edf8dda3efd5b79fdb86172ebd682b9
+=======
 >>>>>>> 54f98b651edf8dda3efd5b79fdb86172ebd682b9
 
 
