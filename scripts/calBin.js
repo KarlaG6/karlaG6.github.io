@@ -26,7 +26,7 @@ point.addEventListener('click',function (){
     screen.value+='.';
 });
 brackets.addEventListener('click',function (){
-    //screen.value+='()'
+    //screen.value+='('
 });
 reset.addEventListener('click',function (){
     screen.value='';
@@ -36,7 +36,7 @@ reset.addEventListener('click',function (){
 result.addEventListener('click',function(){ 
     switch(type){
         case 0:
-            resultOp=num+num2;
+            resultOp=num+num2; 
             break;
 
         case 1:
