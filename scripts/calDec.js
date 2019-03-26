@@ -15,8 +15,6 @@ var result = document.getElementById("item14");
 var screen = document.getElementById("screen");
 var opA= []; var opB = []; var num = 0; var type = 9;
 var opType =0; var num2=0; var resultOp =0; var resultFin=0;
-var opM=[]; var opm=[]; var rslt=0; var rsltFin=[]; var N=2;
-var rsltCo=0; var rsltRes=0;
 
 zero.addEventListener('click',zerofnc);
 one.addEventListener('click',onefnc);
@@ -33,45 +31,12 @@ brackets.addEventListener('click',function (){
 reset.addEventListener('click',function (){
     screen.value='';
     resultShow.value="";
-     
+    
 });
 result.addEventListener('click',function(){ 
-    if (opA.length>opB.length){
-        opM=opA.reverse(); 
-        opm=opB.reverse();
-        for (var k=0; opm.length<opM.length; k++){
-            opm.push(0)
-        }
-        num=Number(opM.join(""));
-        num2=Number(opm.join(""))
-    }else if(opA.length<opB.length){
-        opM=opB.reverse();
-        opm=opA.reverse();
-        for (var k=0; opm.length<opM.length; k++){
-            opm.push(0)
-        }
-        num=Number(opM.join(""));
-        num2=Number(opm.join(""))
-    }else{
-        console.log('los op.length son ==');
-        opM=opA.reverse(); 
-        opm=opB.reverse();
-        num=Number(opM.join(""));
-        num2=Number(opm.join(""))
-    }
-    for (var i=0;i<=opM.length; i++){
-        rslt= num+num2;
-        if (rslt>=N){
-            rsltCo=rslt/N;
-            rsltRes=rslt%N;
-            rslt=rsltRes
-        }
-        rsltFin.push(rslt);
-    }
-    rsltFin.reverse();
     switch(type){
         case 0:
-            resultOp= rsltFin.join("").toString(); 
+            resultOp=num+num2; 
             break;
 
         case 1:
@@ -93,11 +58,11 @@ result.addEventListener('click',function(){
 });
 function onefnc(){  
     if( opType==0 ){
-        opA.push(1);
+        opA.push("1");
         resultShow.value= opA.join("");
         num= Number(opA.join("").toString());
     }else {
-        opB.push(1);
+        opB.push("1");
         resultShow.value= opB.join("");
         num2= Number(opB.join("").toString());
     }
@@ -105,11 +70,11 @@ function onefnc(){
 }
 function zerofnc(){
     if(opType==0){
-        opA.push(0);
+        opA.push("0");
         resultShow.value= opA.join("");
         num= Number(opA.join("").toString());
     }else {
-        opB.push(0);
+        opB.push("0");
         resultShow.value= opB.join("");
         num2= Number(opB.join("").toString());
     }
@@ -138,40 +103,7 @@ function divide(){
 }
 
     
-/*
-result.addEventListener('click',function(){ 
-    num=opM.reverse();
-    num2=opm.reverse();
-    for (var i=0;i<=opM.length; i++){
-        rslt=Number(opA[i]*(Math.pow(N,i)));
-        if (rslt>N){
-            rsltCo=rslt/N;
-            rsltRest=rslt%N;
-        }
-        rsltFin.push(rslt)
-    }
-    switch(type){
-        case 0:
-            resultOp= rsltFin.join("").toString(); 
-            break;
 
-        case 1:
-            resultOp=num-num2;
-            break;
-
-        case 2:
-            resultOp=(num)*(num2);
-            console.log("mult");
-            break;
-
-        case 3:
-            resultOp=num/(num2);
-            break;
-    }
-
-    resultFin=resultOp.toString();
-    resultShow.value=resultFin;
-});*/ 
 
 
 
